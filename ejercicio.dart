@@ -10,6 +10,7 @@ void main() {
   print("digite su nombre:");
   String? nombre = stdin.readLineSync();
   //var nombre=stdin.readLineSync(); esta es otra forma
+  //stdin.readLineSync(); sirve para pedir datos stdin-> nombre de la libreria. readLineSync()-> lectura de linea que es el dato que colocamos
   print('su nombre es $nombre');
   print("digite un numero:");
   var numero = stdin.readLineSync();

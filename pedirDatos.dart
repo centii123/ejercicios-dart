@@ -3,6 +3,8 @@ import 'dart:io';
 void main() {
   List<int> notas = [];
   int nota;
+  int suma = 0;
+  double promedio = 0;
 
   for (var i = 0; i >= 0; i++) {
     print("digite sus notas");
@@ -15,5 +17,11 @@ void main() {
     notas.add(nota);
   }
 
-  print(notas);
+  for (var i = 0; i < notas.length; i++) {
+    suma = suma + notas[i];
+  }
+
+  promedio = suma / notas.length;
+
+  print('su promedio es de: $promedio');
 }
